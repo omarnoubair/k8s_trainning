@@ -1,0 +1,11 @@
+    Minikube :
+    https://kubernetes.io/fr/docs/setup/learning-environment/minikube/ permet de simuler un cluster K8S en local
+
+placer l'application du TP/docker_compose dans le cluster kubernetes (minikube ou service fournit par un provider)  
+(Si vous n'avez pas réussi a mettre l'image créer lors du tp docker compose dans le docker hub, utilisez l'image "omarnbr/webapp:1.0" pour votre application web)
+    version 1 :
+    - 1 service et 1 pod pour l'application web 
+    - 1 service et 1 pod pour la base de donnée mysql
+    Version 2:
+    - 1 deployment pour l'application web
+    - 1 deployment pour la base de donnée mysql

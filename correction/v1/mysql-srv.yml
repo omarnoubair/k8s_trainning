@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-srv # utilise pour la résolutation DNS interne
+spec:
+  type: ClusterIP # type par défault
+  selector:
+    app: mysql
+  ports:
+    - name: db
+      protocol: TCP
+      port: 3306
+      targetPort: 3306
+  
